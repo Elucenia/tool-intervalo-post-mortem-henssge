@@ -1,0 +1,81 @@
+[
+  {
+    "label": "70 kg, fator 1, ambiente 20 °C, retal 31,41 °C: cerca de 10 h (equação calculada à mão para t = 10 h dá 31,41 °C)",
+    "input": {
+      "tr": 31.41,
+      "ta": 20,
+      "peso": 70,
+      "fc": 1
+    },
+    "expected": {
+      "raw": {
+        "t": 10,
+        "B": -0.06166
+      },
+      "level": "info",
+      "tol": 0.1
+    },
+    "originalInput": {
+      "tr": 31.41,
+      "ta": 20,
+      "peso": 70,
+      "fc": 1
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "80 kg, ambiente 25 °C (equação acima de 23 °C), retal 34,72 °C: cerca de 6 h",
+    "input": {
+      "tr": 34.72,
+      "ta": 25,
+      "peso": 80
+    },
+    "expected": {
+      "raw": {
+        "t": 6,
+        "B": -0.05445
+      },
+      "tol": 0.1
+    },
+    "originalInput": {
+      "tr": 34.72,
+      "ta": 25,
+      "peso": 80
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Retal acima de 37,2 °C: erro",
+    "input": {
+      "tr": 38,
+      "ta": 20,
+      "peso": 70
+    },
+    "expected": {
+      "error": true
+    },
+    "originalInput": {
+      "tr": 38,
+      "ta": 20,
+      "peso": 70
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Retal igual à ambiente: erro",
+    "input": {
+      "tr": 20,
+      "ta": 20,
+      "peso": 70
+    },
+    "expected": {
+      "error": true
+    },
+    "originalInput": {
+      "tr": 20,
+      "ta": 20,
+      "peso": 70
+    },
+    "expandedZeroOptions": []
+  }
+]

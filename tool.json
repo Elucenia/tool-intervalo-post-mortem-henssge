@@ -1,0 +1,193 @@
+{
+  "tool": {
+    "id": "intervalo-post-mortem-henssge",
+    "title": "Intervalo post-mortem pela temperatura (Henssge)",
+    "short": "Tempo de morte pela temperatura retal",
+    "spec": [
+      "medicina-legal-e-pericia-medica",
+      "patologia"
+    ],
+    "tier": 1,
+    "desc": "Estime o tempo desde a morte pela temperatura retal, temperatura ambiente e peso corporal, com as equações do nomograma de Henssge e fator de correção.",
+    "lead": "Estima o intervalo post-mortem nas primeiras horas a partir de uma medida da temperatura retal, pelo modelo de resfriamento de dois exponenciais que fundamenta o nomograma de Henssge.",
+    "fields": [
+      [
+        "tr",
+        "Temperatura retal profunda",
+        "num",
+        {
+          "min": 5,
+          "max": 42,
+          "step": 0.1,
+          "unit": "°C",
+          "ph": "31,4"
+        }
+      ],
+      [
+        "ta",
+        "Temperatura ambiente (média no local)",
+        "num",
+        {
+          "min": -10,
+          "max": 35,
+          "step": 0.1,
+          "unit": "°C",
+          "ph": "20"
+        }
+      ],
+      [
+        "peso",
+        "Peso corporal",
+        "num",
+        {
+          "min": 1,
+          "max": 250,
+          "step": 0.1,
+          "unit": "kg",
+          "ph": "70"
+        }
+      ],
+      [
+        "fc",
+        "Fator de correção do peso (1,0 = corpo nu, seco, em ar parado)",
+        "num",
+        {
+          "min": 0.3,
+          "max": 3,
+          "step": 0.05,
+          "ph": "1",
+          "opt": true
+        }
+      ]
+    ],
+    "formula": "<p>Temperatura padronizada: Q = (T<sub>retal</sub> − T<sub>ambiente</sub>) / (37,2 − T<sub>ambiente</sub>).</p><p>Ambiente até 23 °C: <strong>Q = 1,25 × e<sup>Bt</sup> − 0,25 × e<sup>5Bt</sup></strong>. Ambiente acima de 23 °C: <strong>Q = 1,11 × e<sup>Bt</sup> − 0,11 × e<sup>10Bt</sup></strong>.</p><p>B = −1,2815 × (fator × peso)<sup>−0,625</sup> + 0,0284. O tempo t (horas) é obtido por solução numérica da equação, como no nomograma.</p>",
+    "table": [
+      [
+        "Condição de resfriamento",
+        "Fator de correção do peso"
+      ],
+      [
+        "Condição padrão: corpo nu, seco, em ar parado, decúbito dorsal estendido",
+        "1,0"
+      ],
+      [
+        "Roupa totalmente molhada com ar em movimento (extremo inferior em ar)",
+        "cerca de 0,7"
+      ],
+      [
+        "Cobertura semelhante a roupa de cama (extremo superior)",
+        "cerca de 2,4"
+      ]
+    ],
+    "table_note": "Use a tabela de fatores de correção de Henssge para roupas, cobertas, ar em movimento e água. Em corpos mais leves, a mesma roupa ou coberta exige fatores maiores (Henssge e Madea, 2004).",
+    "tips": [
+      "O modelo supõe temperatura de 37,2 °C na hora da morte e ambiente <strong>constante</strong>. Febre, hipotermia, exercício intenso, incêndio, mudança do corpo de lugar ou variação da temperatura ambiente invalidam a estimativa.",
+      "Meça a temperatura retal a pelo menos 8 cm de profundidade e a ambiente próxima ao corpo, no mesmo nível; registre o horário das duas medidas.",
+      "O intervalo de confiança de 95% é de pelo menos ±2,8 h e fica mais largo com fatores de correção e intervalos longos: sempre informe o intervalo, não só o valor pontual.",
+      "O método vale melhor nas primeiras 24 horas, enquanto a diferença entre corpo e ambiente ainda é grande. Combine com livores, rigidez, excitabilidade muscular e dados da investigação (método integrado).",
+      "Corpos em água resfriam muito mais rápido e exigem fatores específicos; nessas situações, a estimativa pela temperatura é bem menos precisa."
+    ],
+    "sources": [
+      [
+        "Henssge C. Death time estimation in case work. I. The rectal temperature time of death nomogram. Forensic Sci Int, 1988.",
+        "https://doi.org/10.1016/0379-0738(88)90168-5"
+      ],
+      [
+        "Henssge C, Madea B. Estimation of the time since death in the early post-mortem period. Forensic Sci Int, 2004.",
+        "https://doi.org/10.1016/j.forsciint.2004.04.051"
+      ],
+      [
+        "Schweitzer W, Thali MJ. Computationally approximated solution for the equation for Henssge's time of death estimation. BMC Med Inform Decis Mak, 2019.",
+        "https://doi.org/10.1186/s12911-019-0920-y"
+      ]
+    ],
+    "cases": [
+      [
+        "70 kg, fator 1, ambiente 20 °C, retal 31,41 °C: cerca de 10 h (equação calculada à mão para t = 10 h dá 31,41 °C)",
+        {
+          "tr": 31.41,
+          "ta": 20,
+          "peso": 70,
+          "fc": 1
+        },
+        {
+          "raw": {
+            "t": 10,
+            "B": -0.06166
+          },
+          "level": "info",
+          "tol": 0.1
+        }
+      ],
+      [
+        "80 kg, ambiente 25 °C (equação acima de 23 °C), retal 34,72 °C: cerca de 6 h",
+        {
+          "tr": 34.72,
+          "ta": 25,
+          "peso": 80
+        },
+        {
+          "raw": {
+            "t": 6,
+            "B": -0.05445
+          },
+          "tol": 0.1
+        }
+      ],
+      [
+        "Retal acima de 37,2 °C: erro",
+        {
+          "tr": 38,
+          "ta": 20,
+          "peso": 70
+        },
+        {
+          "error": true
+        }
+      ],
+      [
+        "Retal igual à ambiente: erro",
+        {
+          "tr": 20,
+          "ta": 20,
+          "peso": 70
+        },
+        {
+          "error": true
+        }
+      ]
+    ],
+    "batch": "saude-coletiva",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "saude-coletiva",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/saude-coletiva.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/saude-coletiva.php",
+    "sha256": "5f081943f8faff99f4a6ac07fc16af6d7f8e6aa64d874af2d00ed8bae97da6a2",
+    "bytes": 77577
+  },
+  "clinicalValidation": "not-performed"
+}
