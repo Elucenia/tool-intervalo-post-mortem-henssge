@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-intervalo-post-mortem-henssge",
   "version": "0.1.0",
-  "description": "Intervalo post-mortem pela temperatura (Henssge) · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "Intervalo post-mortem pela temperatura (Henssge) · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
