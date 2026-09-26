@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-intervalo-post-mortem-henssge · Elucenia · https://github.com/Elucenia/tool-intervalo-post-mortem-henssge
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"intervalo-post-mortem-henssge","title":"Intervalo post-mortem pela temperatura (Henssge)","fields":[["tr","Temperatura retal profunda","num",{"min":5,"max":42,"step":0.1,"unit":"°C","ph":"31,4"}],["ta","Temperatura ambiente (média no local)","num",{"min":-10,"max":35,"step":0.1,"unit":"°C","ph":"20"}],["peso","Peso corporal","num",{"min":1,"max":250,"step":0.1,"unit":"kg","ph":"70"}],["fc","Fator de correção do peso (1,0 = corpo nu, seco, em ar parado)","num",{"min":0.3,"max":3,"step":0.05,"ph":"1","opt":true}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
