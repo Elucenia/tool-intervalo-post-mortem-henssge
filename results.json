@@ -1,0 +1,288 @@
+{
+  "id": "intervalo-post-mortem-henssge",
+  "at": "2026-10-05T17:29:52.374Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/intervalo-post-mortem-henssge/calculator.js",
+    "bytes": 6052,
+    "sha256": "c88a7309c0b8d150d1d95aac64cb853655e1dc5567269c3fdd21edc57484f4ba"
+  },
+  "cases": [
+    {
+      "name": "70 kg, fator 1, ambiente 20 °C, retal 31,41 °C: cerca de 10 h (equação calculada à mão para t = 10 h dá 31,41 °C)",
+      "input": {
+        "tr": 31.41,
+        "ta": 20,
+        "peso": 70,
+        "fc": 1
+      },
+      "obtained": {
+        "id": "intervalo-post-mortem-henssge",
+        "main": [
+          "10,0",
+          "horas"
+        ],
+        "label": "Intervalo post-mortem estimado (Henssge)",
+        "raw": {
+          "t": 9.99718202958405,
+          "B": -0.061660081472802435,
+          "q": 0.6633720930232557
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.t",
+          "expected": 10,
+          "obtained": 9.99718202958405,
+          "tolerance": 0.1,
+          "difference": 0.0028179704159505548,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.B",
+          "expected": -0.06166,
+          "obtained": -0.061660081472802435,
+          "tolerance": 0.1,
+          "difference": 8.14728024350897e-8,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.t",
+          "expected": 9.99718202958405,
+          "obtained": 9.99718202958405,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.B",
+          "expected": -0.061660081472802435,
+          "obtained": -0.061660081472802435,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.q",
+          "expected": 0.6633720930232557,
+          "obtained": 0.6633720930232557,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "10,0",
+          "obtained": "10,0",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "horas",
+          "obtained": "horas",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "80 kg, ambiente 25 °C (equação acima de 23 °C), retal 34,72 °C: cerca de 6 h",
+      "input": {
+        "tr": 34.72,
+        "ta": 25,
+        "peso": 80
+      },
+      "obtained": {
+        "id": "intervalo-post-mortem-henssge",
+        "main": [
+          "6,0",
+          "horas"
+        ],
+        "label": "Intervalo post-mortem estimado (Henssge)",
+        "raw": {
+          "t": 6.01190779100004,
+          "B": -0.05444901866913413,
+          "q": 0.7967213114754096
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.t",
+          "expected": 6,
+          "obtained": 6.01190779100004,
+          "tolerance": 0.1,
+          "difference": 0.01190779100003958,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.B",
+          "expected": -0.05445,
+          "obtained": -0.05444901866913413,
+          "tolerance": 0.1,
+          "difference": 9.813308658665476e-7,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.t",
+          "expected": 6.01190779100004,
+          "obtained": 6.01190779100004,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.B",
+          "expected": -0.05444901866913413,
+          "obtained": -0.05444901866913413,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.q",
+          "expected": 0.7967213114754096,
+          "obtained": 0.7967213114754096,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "6,0",
+          "obtained": "6,0",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "horas",
+          "obtained": "horas",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    },
+    {
+      "name": "Retal acima de 37,2 °C: erro",
+      "input": {
+        "tr": 38,
+        "ta": 20,
+        "peso": 70
+      },
+      "obtained": {
+        "error": "A temperatura retal deve ser menor que 37,2 °C (temperatura de referência na hora da morte).",
+        "code": "FORMULA_DOMAIN"
+      },
+      "checks": [
+        {
+          "at": "recorded-rejection",
+          "expected": "4xx with error and no result",
+          "obtained": {
+            "status": 422,
+            "error": "A temperatura retal deve ser menor que 37,2 °C (temperatura de referência na hora da morte).",
+            "result": false
+          },
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    },
+    {
+      "name": "Retal igual à ambiente: erro",
+      "input": {
+        "tr": 20,
+        "ta": 20,
+        "peso": 70
+      },
+      "obtained": {
+        "error": "A temperatura retal precisa ser maior que a ambiente para o método de resfriamento.",
+        "code": "FORMULA_DOMAIN"
+      },
+      "checks": [
+        {
+          "at": "recorded-rejection",
+          "expected": "4xx with error and no result",
+          "obtained": {
+            "status": 422,
+            "error": "A temperatura retal precisa ser maior que a ambiente para o método de resfriamento.",
+            "result": false
+          },
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 42,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

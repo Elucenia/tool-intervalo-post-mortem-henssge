@@ -1,6 +1,15 @@
 [
   {
-    "label": "70 kg, fator 1, ambiente 20 °C, retal 31,41 °C: cerca de 10 h (equação calculada à mão para t = 10 h dá 31,41 °C)",
+    "id": "intervalo-post-mortem-henssge",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "70 kg, fator 1, ambiente 20 °C, retal 31,41 °C: cerca de 10 h (equação calculada à mão para t = 10 h dá 31,41 °C)",
+    "originalInput": {
+      "tr": 31.41,
+      "ta": 20,
+      "peso": 70,
+      "fc": 1
+    },
     "input": {
       "tr": 31.41,
       "ta": 20,
@@ -15,16 +24,37 @@
       "level": "info",
       "tol": 0.1
     },
-    "originalInput": {
-      "tr": 31.41,
-      "ta": 20,
-      "peso": 70,
-      "fc": 1
+    "recordedResult": {
+      "main": [
+        "10,0",
+        "horas"
+      ],
+      "label": "Intervalo post-mortem estimado (Henssge)",
+      "raw": {
+        "t": 9.99718202958405,
+        "B": -0.061660081472802435,
+        "q": 0.6633720930232557
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "80 kg, ambiente 25 °C (equação acima de 23 °C), retal 34,72 °C: cerca de 6 h",
+    "id": "intervalo-post-mortem-henssge",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "80 kg, ambiente 25 °C (equação acima de 23 °C), retal 34,72 °C: cerca de 6 h",
+    "originalInput": {
+      "tr": 34.72,
+      "ta": 25,
+      "peso": 80
+    },
     "input": {
       "tr": 34.72,
       "ta": 25,
@@ -37,15 +67,37 @@
       },
       "tol": 0.1
     },
-    "originalInput": {
-      "tr": 34.72,
-      "ta": 25,
-      "peso": 80
+    "recordedResult": {
+      "main": [
+        "6,0",
+        "horas"
+      ],
+      "label": "Intervalo post-mortem estimado (Henssge)",
+      "raw": {
+        "t": 6.01190779100004,
+        "B": -0.05444901866913413,
+        "q": 0.7967213114754096
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Retal acima de 37,2 °C: erro",
+    "id": "intervalo-post-mortem-henssge",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Retal acima de 37,2 °C: erro",
+    "originalInput": {
+      "tr": 38,
+      "ta": 20,
+      "peso": 70
+    },
     "input": {
       "tr": 38,
       "ta": 20,
@@ -54,15 +106,28 @@
     "expected": {
       "error": true
     },
+    "recordedResult": {
+      "error": "A temperatura retal deve ser menor que 37,2 °C (temperatura de referência na hora da morte)."
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "intervalo-post-mortem-henssge",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Retal igual à ambiente: erro",
     "originalInput": {
-      "tr": 38,
+      "tr": 20,
       "ta": 20,
       "peso": 70
     },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "Retal igual à ambiente: erro",
     "input": {
       "tr": 20,
       "ta": 20,
@@ -71,11 +136,16 @@
     "expected": {
       "error": true
     },
-    "originalInput": {
-      "tr": 20,
-      "ta": 20,
-      "peso": 70
+    "recordedResult": {
+      "error": "A temperatura retal precisa ser maior que a ambiente para o método de resfriamento."
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

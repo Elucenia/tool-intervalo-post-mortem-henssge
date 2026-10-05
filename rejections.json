@@ -1,0 +1,567 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field tr",
+    "input": {
+      "ta": 20,
+      "peso": 70,
+      "fc": 1
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field tr",
+    "input": {
+      "tr": "",
+      "ta": 20,
+      "peso": 70,
+      "fc": 1
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" tr",
+    "input": {
+      "tr": "NaN",
+      "ta": 20,
+      "peso": 70,
+      "fc": 1
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" tr",
+    "input": {
+      "tr": "Infinity",
+      "ta": 20,
+      "peso": 70,
+      "fc": 1
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" tr",
+    "input": {
+      "tr": "1e309",
+      "ta": 20,
+      "peso": 70,
+      "fc": 1
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" tr",
+    "input": {
+      "tr": "invalid",
+      "ta": 20,
+      "peso": 70,
+      "fc": 1
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} tr",
+    "input": {
+      "tr": {},
+      "ta": 20,
+      "peso": 70,
+      "fc": 1
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true tr",
+    "input": {
+      "tr": true,
+      "ta": 20,
+      "peso": 70,
+      "fc": 1
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum tr",
+    "input": {
+      "tr": 4,
+      "ta": 20,
+      "peso": 70,
+      "fc": 1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "tr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum tr",
+    "input": {
+      "tr": 46.2,
+      "ta": 20,
+      "peso": 70,
+      "fc": 1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "tr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field ta",
+    "input": {
+      "tr": 31.41,
+      "peso": 70,
+      "fc": 1
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ta"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field ta",
+    "input": {
+      "tr": 31.41,
+      "ta": "",
+      "peso": 70,
+      "fc": 1
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ta"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" ta",
+    "input": {
+      "tr": 31.41,
+      "ta": "NaN",
+      "peso": 70,
+      "fc": 1
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ta"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" ta",
+    "input": {
+      "tr": 31.41,
+      "ta": "Infinity",
+      "peso": 70,
+      "fc": 1
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ta"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" ta",
+    "input": {
+      "tr": 31.41,
+      "ta": "1e309",
+      "peso": 70,
+      "fc": 1
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ta"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" ta",
+    "input": {
+      "tr": 31.41,
+      "ta": "invalid",
+      "peso": 70,
+      "fc": 1
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ta"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} ta",
+    "input": {
+      "tr": 31.41,
+      "ta": {},
+      "peso": 70,
+      "fc": 1
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ta"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true ta",
+    "input": {
+      "tr": 31.41,
+      "ta": true,
+      "peso": 70,
+      "fc": 1
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ta"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum ta",
+    "input": {
+      "tr": 31.41,
+      "ta": -11,
+      "peso": 70,
+      "fc": 1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ta"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum ta",
+    "input": {
+      "tr": 31.41,
+      "ta": 38.5,
+      "peso": 70,
+      "fc": 1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ta"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field peso",
+    "input": {
+      "tr": 31.41,
+      "ta": 20,
+      "fc": 1
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field peso",
+    "input": {
+      "tr": 31.41,
+      "ta": 20,
+      "peso": "",
+      "fc": 1
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" peso",
+    "input": {
+      "tr": 31.41,
+      "ta": 20,
+      "peso": "NaN",
+      "fc": 1
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" peso",
+    "input": {
+      "tr": 31.41,
+      "ta": 20,
+      "peso": "Infinity",
+      "fc": 1
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" peso",
+    "input": {
+      "tr": 31.41,
+      "ta": 20,
+      "peso": "1e309",
+      "fc": 1
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" peso",
+    "input": {
+      "tr": 31.41,
+      "ta": 20,
+      "peso": "invalid",
+      "fc": 1
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} peso",
+    "input": {
+      "tr": 31.41,
+      "ta": 20,
+      "peso": {},
+      "fc": 1
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true peso",
+    "input": {
+      "tr": 31.41,
+      "ta": 20,
+      "peso": true,
+      "fc": 1
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum peso",
+    "input": {
+      "tr": 31.41,
+      "ta": 20,
+      "peso": 0,
+      "fc": 1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum peso",
+    "input": {
+      "tr": 31.41,
+      "ta": 20,
+      "peso": 275,
+      "fc": 1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" fc",
+    "input": {
+      "tr": 31.41,
+      "ta": 20,
+      "peso": 70,
+      "fc": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" fc",
+    "input": {
+      "tr": 31.41,
+      "ta": 20,
+      "peso": 70,
+      "fc": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" fc",
+    "input": {
+      "tr": 31.41,
+      "ta": 20,
+      "peso": 70,
+      "fc": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" fc",
+    "input": {
+      "tr": 31.41,
+      "ta": 20,
+      "peso": 70,
+      "fc": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} fc",
+    "input": {
+      "tr": 31.41,
+      "ta": 20,
+      "peso": 70,
+      "fc": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true fc",
+    "input": {
+      "tr": 31.41,
+      "ta": 20,
+      "peso": 70,
+      "fc": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum fc",
+    "input": {
+      "tr": 31.41,
+      "ta": 20,
+      "peso": 70,
+      "fc": -0.7
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum fc",
+    "input": {
+      "tr": 31.41,
+      "ta": 20,
+      "peso": 70,
+      "fc": 4
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]
