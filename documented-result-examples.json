@@ -1,0 +1,1652 @@
+{
+  "id": "intervalo-post-mortem-henssge",
+  "implementationVersion": "intervalo-post-mortem-henssge@native-2026-10-05+51aa703c8009",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "70 kg, fator 1, ambiente 20 °C, retal 31,41 °C: cerca de 10 h (equação calculada à mão para t = 10 h dá 31,41 °C)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Equação usada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "ambiente até 23 °C (1,25 / 0,25)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Peso corrigido (fator × peso)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "70,0 kg",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Constante de resfriamento B",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "-0,0617 h⁻¹",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Temperatura padronizada Q",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,663",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Morte há cerca de 10 h (estimativa pontual do modelo)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "O menor intervalo de confiança de 95% do método é de ±2,8 h, em condições padrão (fator 1). Com fatores de correção, intervalos longos ou ambiente instável, os limites são mais largos: leia os limites no nomograma original.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "80 kg, ambiente 25 °C (equação acima de 23 °C), retal 34,72 °C: cerca de 6 h",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Equação usada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "ambiente acima de 23 °C (10/9 / 1/9)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Peso corrigido (fator × peso)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "80,0 kg",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Constante de resfriamento B",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "-0,0544 h⁻¹",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Temperatura padronizada Q",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,797",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Morte há cerca de 6 h 1 min (estimativa pontual do modelo)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "O menor intervalo de confiança de 95% do método é de ±2,8 h, em condições padrão (fator 1). Com fatores de correção, intervalos longos ou ambiente instável, os limites são mais largos: leia os limites no nomograma original.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "70 kg, fator 1, ambiente 20 °C, retal 31,41 °C: cerca de 10 h (equação calculada à mão para t = 10 h dá 31,41 °C)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Equation used",
+                "locale": "en",
+                "template": "documented-authored-356dabff4ba500686a7f"
+              },
+              "value": {
+                "text": "environment up to 23 °C (1,25 / 0,25)",
+                "locale": "en",
+                "template": "documented-authored-613d91951fecd0ee8c8a"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Corrected weight (factor × weight)",
+                "locale": "en",
+                "template": "documented-authored-d5042665df842ae2ca64"
+              },
+              "value": {
+                "text": "70.0 kg",
+                "locale": "en",
+                "template": "documented-authored-d098cb4915945a199529",
+                "sourceNumbers": [
+                  70
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Cooling constant B",
+                "locale": "en",
+                "template": "documented-authored-5a94cb1a17d20de49387"
+              },
+              "value": {
+                "text": "-0.0617 h⁻¹",
+                "locale": "en",
+                "template": "documented-authored-b6dce8c80b9267aa26da",
+                "sourceNumbers": [
+                  -0.0617
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Standardized temperature Q",
+                "locale": "en",
+                "template": "documented-authored-0b07b85ef6c4c0b25db8"
+              },
+              "value": {
+                "text": "0.663",
+                "locale": "en",
+                "template": "documented-authored-f234eb90d3f708feab32",
+                "sourceNumbers": [
+                  0.663
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Death about 10 h ago (point estimate of the model)",
+            "locale": "en",
+            "template": "documented-authored-c6ac7bd7bf9d8272aed5",
+            "sourceNumbers": [
+              10
+            ]
+          },
+          "note": {
+            "text": "The narrowest 95% confidence interval of the method is ±2,8 h, under standard conditions (factor 1). With correction factors, long intervals, or unstable environment, the limits are wider: read the limits on the original nomogram.",
+            "locale": "en",
+            "template": "documented-authored-a370366d08dc5429bf80"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "80 kg, ambiente 25 °C (equação acima de 23 °C), retal 34,72 °C: cerca de 6 h",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Equation used",
+                "locale": "en",
+                "template": "documented-authored-356dabff4ba500686a7f"
+              },
+              "value": {
+                "text": "ambient temperature above 23 °C (10/9 / 1/9)",
+                "locale": "en",
+                "template": "documented-authored-b68ce1151def4c7d2da5"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Corrected weight (factor × weight)",
+                "locale": "en",
+                "template": "documented-authored-d5042665df842ae2ca64"
+              },
+              "value": {
+                "text": "80.0 kg",
+                "locale": "en",
+                "template": "documented-authored-d098cb4915945a199529",
+                "sourceNumbers": [
+                  80
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Cooling constant B",
+                "locale": "en",
+                "template": "documented-authored-5a94cb1a17d20de49387"
+              },
+              "value": {
+                "text": "-0.0544 h⁻¹",
+                "locale": "en",
+                "template": "documented-authored-b6dce8c80b9267aa26da",
+                "sourceNumbers": [
+                  -0.0544
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Standardized temperature Q",
+                "locale": "en",
+                "template": "documented-authored-0b07b85ef6c4c0b25db8"
+              },
+              "value": {
+                "text": "0.797",
+                "locale": "en",
+                "template": "documented-authored-f234eb90d3f708feab32",
+                "sourceNumbers": [
+                  0.797
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Death about 6 h 1 min ago (model point estimate)",
+            "locale": "en",
+            "template": "documented-authored-3769b151347f886eeccd",
+            "sourceNumbers": [
+              6,
+              1
+            ]
+          },
+          "note": {
+            "text": "The narrowest 95% confidence interval of the method is ±2,8 h, under standard conditions (factor 1). With correction factors, long intervals, or unstable environment, the limits are wider: read the limits on the original nomogram.",
+            "locale": "en",
+            "template": "documented-authored-a370366d08dc5429bf80"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "70 kg, fator 1, ambiente 20 °C, retal 31,41 °C: cerca de 10 h (equação calculada à mão para t = 10 h dá 31,41 °C)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Ecuación utilizada",
+                "locale": "es",
+                "template": "documented-authored-356dabff4ba500686a7f"
+              },
+              "value": {
+                "text": "ambiente hasta 23 °C (1,25 / 0,25)",
+                "locale": "es",
+                "template": "documented-authored-613d91951fecd0ee8c8a"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Peso corregido (factor × peso)",
+                "locale": "es",
+                "template": "documented-authored-d5042665df842ae2ca64"
+              },
+              "value": {
+                "text": "70,0 kg",
+                "locale": "es",
+                "template": "documented-authored-d098cb4915945a199529",
+                "sourceNumbers": [
+                  70
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Constante de enfriamiento B",
+                "locale": "es",
+                "template": "documented-authored-5a94cb1a17d20de49387"
+              },
+              "value": {
+                "text": "-0,0617 h⁻¹",
+                "locale": "es",
+                "template": "documented-authored-b6dce8c80b9267aa26da",
+                "sourceNumbers": [
+                  -0.0617
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Temperatura estandarizada Q",
+                "locale": "es",
+                "template": "documented-authored-0b07b85ef6c4c0b25db8"
+              },
+              "value": {
+                "text": "0,663",
+                "locale": "es",
+                "template": "documented-authored-f234eb90d3f708feab32",
+                "sourceNumbers": [
+                  0.663
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Muerte hace cerca de 10 h (estimación puntual del modelo)",
+            "locale": "es",
+            "template": "documented-authored-c6ac7bd7bf9d8272aed5",
+            "sourceNumbers": [
+              10
+            ]
+          },
+          "note": {
+            "text": "El intervalo de confianza del 95% más estrecho del método es de ±2,8 h, en condiciones estándar (factor 1). Con factores de corrección, intervalos largos o ambiente inestable, los límites son más amplios: lea los límites en el nomograma original.",
+            "locale": "es",
+            "template": "documented-authored-a370366d08dc5429bf80"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "80 kg, ambiente 25 °C (equação acima de 23 °C), retal 34,72 °C: cerca de 6 h",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Ecuación utilizada",
+                "locale": "es",
+                "template": "documented-authored-356dabff4ba500686a7f"
+              },
+              "value": {
+                "text": "ambiente por encima de 23 °C (10/9 / 1/9)",
+                "locale": "es",
+                "template": "documented-authored-b68ce1151def4c7d2da5"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Peso corregido (factor × peso)",
+                "locale": "es",
+                "template": "documented-authored-d5042665df842ae2ca64"
+              },
+              "value": {
+                "text": "80,0 kg",
+                "locale": "es",
+                "template": "documented-authored-d098cb4915945a199529",
+                "sourceNumbers": [
+                  80
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Constante de enfriamiento B",
+                "locale": "es",
+                "template": "documented-authored-5a94cb1a17d20de49387"
+              },
+              "value": {
+                "text": "-0,0544 h⁻¹",
+                "locale": "es",
+                "template": "documented-authored-b6dce8c80b9267aa26da",
+                "sourceNumbers": [
+                  -0.0544
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Temperatura estandarizada Q",
+                "locale": "es",
+                "template": "documented-authored-0b07b85ef6c4c0b25db8"
+              },
+              "value": {
+                "text": "0,797",
+                "locale": "es",
+                "template": "documented-authored-f234eb90d3f708feab32",
+                "sourceNumbers": [
+                  0.797
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Muerte hace cerca de 6 h 1 min (estimación puntual del modelo)",
+            "locale": "es",
+            "template": "documented-authored-3769b151347f886eeccd",
+            "sourceNumbers": [
+              6,
+              1
+            ]
+          },
+          "note": {
+            "text": "El intervalo de confianza del 95% más estrecho del método es de ±2,8 h, en condiciones estándar (factor 1). Con factores de corrección, intervalos largos o ambiente inestable, los límites son más amplios: lea los límites en el nomograma original.",
+            "locale": "es",
+            "template": "documented-authored-a370366d08dc5429bf80"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "70 kg, fator 1, ambiente 20 °C, retal 31,41 °C: cerca de 10 h (equação calculada à mão para t = 10 h dá 31,41 °C)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Équation utilisée",
+                "locale": "fr",
+                "template": "documented-authored-356dabff4ba500686a7f"
+              },
+              "value": {
+                "text": "environnement jusqu’à 23 °C (1,25 / 0,25)",
+                "locale": "fr",
+                "template": "documented-authored-613d91951fecd0ee8c8a"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Poids corrigé (facteur × poids)",
+                "locale": "fr",
+                "template": "documented-authored-d5042665df842ae2ca64"
+              },
+              "value": {
+                "text": "70,0 kg",
+                "locale": "fr",
+                "template": "documented-authored-d098cb4915945a199529",
+                "sourceNumbers": [
+                  70
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Constante de refroidissement B",
+                "locale": "fr",
+                "template": "documented-authored-5a94cb1a17d20de49387"
+              },
+              "value": {
+                "text": "-0,0617 h⁻¹",
+                "locale": "fr",
+                "template": "documented-authored-b6dce8c80b9267aa26da",
+                "sourceNumbers": [
+                  -0.0617
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Température standardisée Q",
+                "locale": "fr",
+                "template": "documented-authored-0b07b85ef6c4c0b25db8"
+              },
+              "value": {
+                "text": "0,663",
+                "locale": "fr",
+                "template": "documented-authored-f234eb90d3f708feab32",
+                "sourceNumbers": [
+                  0.663
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Décès il y a environ 10 h (estimation ponctuelle du modèle)",
+            "locale": "fr",
+            "template": "documented-authored-c6ac7bd7bf9d8272aed5",
+            "sourceNumbers": [
+              10
+            ]
+          },
+          "note": {
+            "text": "L’intervalle de confiance à 95 % le plus étroit de la méthode est de ±2,8 h, dans des conditions standard (facteur 1). Avec des facteurs de correction, des intervalles longs ou un environnement instable, les limites sont plus larges : lisez les limites sur le nomogramme original.",
+            "locale": "fr",
+            "template": "documented-authored-a370366d08dc5429bf80"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "80 kg, ambiente 25 °C (equação acima de 23 °C), retal 34,72 °C: cerca de 6 h",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Équation utilisée",
+                "locale": "fr",
+                "template": "documented-authored-356dabff4ba500686a7f"
+              },
+              "value": {
+                "text": "température ambiante au-dessus de 23 °C (10/9 / 1/9)",
+                "locale": "fr",
+                "template": "documented-authored-b68ce1151def4c7d2da5"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Poids corrigé (facteur × poids)",
+                "locale": "fr",
+                "template": "documented-authored-d5042665df842ae2ca64"
+              },
+              "value": {
+                "text": "80,0 kg",
+                "locale": "fr",
+                "template": "documented-authored-d098cb4915945a199529",
+                "sourceNumbers": [
+                  80
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Constante de refroidissement B",
+                "locale": "fr",
+                "template": "documented-authored-5a94cb1a17d20de49387"
+              },
+              "value": {
+                "text": "-0,0544 h⁻¹",
+                "locale": "fr",
+                "template": "documented-authored-b6dce8c80b9267aa26da",
+                "sourceNumbers": [
+                  -0.0544
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Température standardisée Q",
+                "locale": "fr",
+                "template": "documented-authored-0b07b85ef6c4c0b25db8"
+              },
+              "value": {
+                "text": "0,797",
+                "locale": "fr",
+                "template": "documented-authored-f234eb90d3f708feab32",
+                "sourceNumbers": [
+                  0.797
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Décès il y a environ 6 h 1 min (estimation ponctuelle du modèle)",
+            "locale": "fr",
+            "template": "documented-authored-3769b151347f886eeccd",
+            "sourceNumbers": [
+              6,
+              1
+            ]
+          },
+          "note": {
+            "text": "L’intervalle de confiance à 95 % le plus étroit de la méthode est de ±2,8 h, dans des conditions standard (facteur 1). Avec des facteurs de correction, des intervalles longs ou un environnement instable, les limites sont plus larges : lisez les limites sur le nomogramme original.",
+            "locale": "fr",
+            "template": "documented-authored-a370366d08dc5429bf80"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "70 kg, fator 1, ambiente 20 °C, retal 31,41 °C: cerca de 10 h (equação calculada à mão para t = 10 h dá 31,41 °C)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Verwendete Gleichung",
+                "locale": "de",
+                "template": "documented-authored-356dabff4ba500686a7f"
+              },
+              "value": {
+                "text": "Umgebung bis 23 °C (1,25 / 0,25)",
+                "locale": "de",
+                "template": "documented-authored-613d91951fecd0ee8c8a"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Korrigiertes Gewicht (Faktor × Gewicht)",
+                "locale": "de",
+                "template": "documented-authored-d5042665df842ae2ca64"
+              },
+              "value": {
+                "text": "70,0 kg",
+                "locale": "de",
+                "template": "documented-authored-d098cb4915945a199529",
+                "sourceNumbers": [
+                  70
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Abkühlkonstante B",
+                "locale": "de",
+                "template": "documented-authored-5a94cb1a17d20de49387"
+              },
+              "value": {
+                "text": "-0,0617 h⁻¹",
+                "locale": "de",
+                "template": "documented-authored-b6dce8c80b9267aa26da",
+                "sourceNumbers": [
+                  -0.0617
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Standardisierte Temperatur Q",
+                "locale": "de",
+                "template": "documented-authored-0b07b85ef6c4c0b25db8"
+              },
+              "value": {
+                "text": "0,663",
+                "locale": "de",
+                "template": "documented-authored-f234eb90d3f708feab32",
+                "sourceNumbers": [
+                  0.663
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Tod vor etwa 10 h (Punktschätzung des Modells)",
+            "locale": "de",
+            "template": "documented-authored-c6ac7bd7bf9d8272aed5",
+            "sourceNumbers": [
+              10
+            ]
+          },
+          "note": {
+            "text": "Das engste 95%-Konfidenzintervall der Methode beträgt unter Standardbedingungen (Faktor 1) ±2,8 h. Bei Korrekturfaktoren, langen Intervallen oder instabiler Umgebung sind die Grenzen weiter: Lesen Sie die Grenzen im ursprünglichen Nomogramm nach.",
+            "locale": "de",
+            "template": "documented-authored-a370366d08dc5429bf80"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "80 kg, ambiente 25 °C (equação acima de 23 °C), retal 34,72 °C: cerca de 6 h",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Verwendete Gleichung",
+                "locale": "de",
+                "template": "documented-authored-356dabff4ba500686a7f"
+              },
+              "value": {
+                "text": "Umgebungstemperatur über 23 °C (10/9 / 1/9)",
+                "locale": "de",
+                "template": "documented-authored-b68ce1151def4c7d2da5"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Korrigiertes Gewicht (Faktor × Gewicht)",
+                "locale": "de",
+                "template": "documented-authored-d5042665df842ae2ca64"
+              },
+              "value": {
+                "text": "80,0 kg",
+                "locale": "de",
+                "template": "documented-authored-d098cb4915945a199529",
+                "sourceNumbers": [
+                  80
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Abkühlkonstante B",
+                "locale": "de",
+                "template": "documented-authored-5a94cb1a17d20de49387"
+              },
+              "value": {
+                "text": "-0,0544 h⁻¹",
+                "locale": "de",
+                "template": "documented-authored-b6dce8c80b9267aa26da",
+                "sourceNumbers": [
+                  -0.0544
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Standardisierte Temperatur Q",
+                "locale": "de",
+                "template": "documented-authored-0b07b85ef6c4c0b25db8"
+              },
+              "value": {
+                "text": "0,797",
+                "locale": "de",
+                "template": "documented-authored-f234eb90d3f708feab32",
+                "sourceNumbers": [
+                  0.797
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Tod vor etwa 6 h 1 min (Punktschätzung des Modells)",
+            "locale": "de",
+            "template": "documented-authored-3769b151347f886eeccd",
+            "sourceNumbers": [
+              6,
+              1
+            ]
+          },
+          "note": {
+            "text": "Das engste 95%-Konfidenzintervall der Methode beträgt unter Standardbedingungen (Faktor 1) ±2,8 h. Bei Korrekturfaktoren, langen Intervallen oder instabiler Umgebung sind die Grenzen weiter: Lesen Sie die Grenzen im ursprünglichen Nomogramm nach.",
+            "locale": "de",
+            "template": "documented-authored-a370366d08dc5429bf80"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "70 kg, fator 1, ambiente 20 °C, retal 31,41 °C: cerca de 10 h (equação calculada à mão para t = 10 h dá 31,41 °C)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Equazione utilizzata",
+                "locale": "it",
+                "template": "documented-authored-356dabff4ba500686a7f"
+              },
+              "value": {
+                "text": "ambiente fino a 23 °C (1,25 / 0,25)",
+                "locale": "it",
+                "template": "documented-authored-613d91951fecd0ee8c8a"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Peso corretto (fattore × peso)",
+                "locale": "it",
+                "template": "documented-authored-d5042665df842ae2ca64"
+              },
+              "value": {
+                "text": "70,0 kg",
+                "locale": "it",
+                "template": "documented-authored-d098cb4915945a199529",
+                "sourceNumbers": [
+                  70
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Costante di raffreddamento B",
+                "locale": "it",
+                "template": "documented-authored-5a94cb1a17d20de49387"
+              },
+              "value": {
+                "text": "-0,0617 h⁻¹",
+                "locale": "it",
+                "template": "documented-authored-b6dce8c80b9267aa26da",
+                "sourceNumbers": [
+                  -0.0617
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Temperatura standardizzata Q",
+                "locale": "it",
+                "template": "documented-authored-0b07b85ef6c4c0b25db8"
+              },
+              "value": {
+                "text": "0,663",
+                "locale": "it",
+                "template": "documented-authored-f234eb90d3f708feab32",
+                "sourceNumbers": [
+                  0.663
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Morte circa 10 h fa (stima puntuale del modello)",
+            "locale": "it",
+            "template": "documented-authored-c6ac7bd7bf9d8272aed5",
+            "sourceNumbers": [
+              10
+            ]
+          },
+          "note": {
+            "text": "L’intervallo di confidenza del 95% più stretto del metodo è di ±2,8 h, in condizioni standard (fattore 1). Con fattori di correzione, intervalli lunghi o ambiente instabile, i limiti sono più ampi: leggere i limiti nel nomogramma originale.",
+            "locale": "it",
+            "template": "documented-authored-a370366d08dc5429bf80"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "80 kg, ambiente 25 °C (equação acima de 23 °C), retal 34,72 °C: cerca de 6 h",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Equazione utilizzata",
+                "locale": "it",
+                "template": "documented-authored-356dabff4ba500686a7f"
+              },
+              "value": {
+                "text": "temperatura ambiente oltre 23 °C (10/9 / 1/9)",
+                "locale": "it",
+                "template": "documented-authored-b68ce1151def4c7d2da5"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Peso corretto (fattore × peso)",
+                "locale": "it",
+                "template": "documented-authored-d5042665df842ae2ca64"
+              },
+              "value": {
+                "text": "80,0 kg",
+                "locale": "it",
+                "template": "documented-authored-d098cb4915945a199529",
+                "sourceNumbers": [
+                  80
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Costante di raffreddamento B",
+                "locale": "it",
+                "template": "documented-authored-5a94cb1a17d20de49387"
+              },
+              "value": {
+                "text": "-0,0544 h⁻¹",
+                "locale": "it",
+                "template": "documented-authored-b6dce8c80b9267aa26da",
+                "sourceNumbers": [
+                  -0.0544
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Temperatura standardizzata Q",
+                "locale": "it",
+                "template": "documented-authored-0b07b85ef6c4c0b25db8"
+              },
+              "value": {
+                "text": "0,797",
+                "locale": "it",
+                "template": "documented-authored-f234eb90d3f708feab32",
+                "sourceNumbers": [
+                  0.797
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Morte circa 6 h 1 min fa (stima puntuale del modello)",
+            "locale": "it",
+            "template": "documented-authored-3769b151347f886eeccd",
+            "sourceNumbers": [
+              6,
+              1
+            ]
+          },
+          "note": {
+            "text": "L’intervallo di confidenza del 95% più stretto del metodo è di ±2,8 h, in condizioni standard (fattore 1). Con fattori di correzione, intervalli lunghi o ambiente instabile, i limiti sono più ampi: leggere i limiti nel nomogramma originale.",
+            "locale": "it",
+            "template": "documented-authored-a370366d08dc5429bf80"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "70 kg, fator 1, ambiente 20 °C, retal 31,41 °C: cerca de 10 h (equação calculada à mão para t = 10 h dá 31,41 °C)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "المعادلة المستخدمة",
+                "locale": "ar",
+                "template": "documented-authored-356dabff4ba500686a7f"
+              },
+              "value": {
+                "text": "بيئة حتى 23 °C (1,25 / 0,25)",
+                "locale": "ar",
+                "template": "documented-authored-613d91951fecd0ee8c8a"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "الوزن المصحح (العامل × الوزن)",
+                "locale": "ar",
+                "template": "documented-authored-d5042665df842ae2ca64"
+              },
+              "value": {
+                "text": "٧٠٫٠ kg",
+                "locale": "ar",
+                "template": "documented-authored-d098cb4915945a199529",
+                "sourceNumbers": [
+                  70
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "ثابت التبريد B",
+                "locale": "ar",
+                "template": "documented-authored-5a94cb1a17d20de49387"
+              },
+              "value": {
+                "text": "؜-٠٫٠٦١٧ h⁻¹",
+                "locale": "ar",
+                "template": "documented-authored-b6dce8c80b9267aa26da",
+                "sourceNumbers": [
+                  -0.0617
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "درجة الحرارة المعيارية Q",
+                "locale": "ar",
+                "template": "documented-authored-0b07b85ef6c4c0b25db8"
+              },
+              "value": {
+                "text": "٠٫٦٦٣",
+                "locale": "ar",
+                "template": "documented-authored-f234eb90d3f708feab32",
+                "sourceNumbers": [
+                  0.663
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "الوفاة منذ نحو ١٠ ساعة (تقدير نقطي للنموذج)",
+            "locale": "ar",
+            "template": "documented-authored-c6ac7bd7bf9d8272aed5",
+            "sourceNumbers": [
+              10
+            ]
+          },
+          "note": {
+            "text": "أضيق فترة ثقة 95% للطريقة هي ±2,8 h، في الظروف القياسية (العامل 1). مع عوامل التصحيح أو الفترات الطويلة أو البيئة غير المستقرة، تكون الحدود أوسع: اقرأ الحدود في النوميجرام الأصلي.",
+            "locale": "ar",
+            "template": "documented-authored-a370366d08dc5429bf80"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "80 kg, ambiente 25 °C (equação acima de 23 °C), retal 34,72 °C: cerca de 6 h",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "المعادلة المستخدمة",
+                "locale": "ar",
+                "template": "documented-authored-356dabff4ba500686a7f"
+              },
+              "value": {
+                "text": "درجة حرارة محيطة أعلى من ٢٣ °C ‏(١٠/٩ / ١/٩)",
+                "locale": "ar",
+                "template": "documented-authored-b68ce1151def4c7d2da5"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "الوزن المصحح (العامل × الوزن)",
+                "locale": "ar",
+                "template": "documented-authored-d5042665df842ae2ca64"
+              },
+              "value": {
+                "text": "٨٠٫٠ kg",
+                "locale": "ar",
+                "template": "documented-authored-d098cb4915945a199529",
+                "sourceNumbers": [
+                  80
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "ثابت التبريد B",
+                "locale": "ar",
+                "template": "documented-authored-5a94cb1a17d20de49387"
+              },
+              "value": {
+                "text": "؜-٠٫٠٥٤٤ h⁻¹",
+                "locale": "ar",
+                "template": "documented-authored-b6dce8c80b9267aa26da",
+                "sourceNumbers": [
+                  -0.0544
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "درجة الحرارة المعيارية Q",
+                "locale": "ar",
+                "template": "documented-authored-0b07b85ef6c4c0b25db8"
+              },
+              "value": {
+                "text": "٠٫٧٩٧",
+                "locale": "ar",
+                "template": "documented-authored-f234eb90d3f708feab32",
+                "sourceNumbers": [
+                  0.797
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "الوفاة منذ نحو ٦ h ١ min (تقدير نقطي للنموذج)",
+            "locale": "ar",
+            "template": "documented-authored-3769b151347f886eeccd",
+            "sourceNumbers": [
+              6,
+              1
+            ]
+          },
+          "note": {
+            "text": "أضيق فترة ثقة 95% للطريقة هي ±2,8 h، في الظروف القياسية (العامل 1). مع عوامل التصحيح أو الفترات الطويلة أو البيئة غير المستقرة، تكون الحدود أوسع: اقرأ الحدود في النوميجرام الأصلي.",
+            "locale": "ar",
+            "template": "documented-authored-a370366d08dc5429bf80"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "70 kg, fator 1, ambiente 20 °C, retal 31,41 °C: cerca de 10 h (equação calculada à mão para t = 10 h dá 31,41 °C)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "所用方程",
+                "locale": "zh",
+                "template": "documented-authored-356dabff4ba500686a7f"
+              },
+              "value": {
+                "text": "环境最高至 23 °C (1,25 / 0,25)",
+                "locale": "zh",
+                "template": "documented-authored-613d91951fecd0ee8c8a"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "校正后体重（因子 × 体重）",
+                "locale": "zh",
+                "template": "documented-authored-d5042665df842ae2ca64"
+              },
+              "value": {
+                "text": "70.0 kg",
+                "locale": "zh",
+                "template": "documented-authored-d098cb4915945a199529",
+                "sourceNumbers": [
+                  70
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "冷却常数 B",
+                "locale": "zh",
+                "template": "documented-authored-5a94cb1a17d20de49387"
+              },
+              "value": {
+                "text": "-0.0617 h⁻¹",
+                "locale": "zh",
+                "template": "documented-authored-b6dce8c80b9267aa26da",
+                "sourceNumbers": [
+                  -0.0617
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "标准化温度 Q",
+                "locale": "zh",
+                "template": "documented-authored-0b07b85ef6c4c0b25db8"
+              },
+              "value": {
+                "text": "0.663",
+                "locale": "zh",
+                "template": "documented-authored-f234eb90d3f708feab32",
+                "sourceNumbers": [
+                  0.663
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "约 10 小时前死亡（模型的点估计）",
+            "locale": "zh",
+            "template": "documented-authored-c6ac7bd7bf9d8272aed5",
+            "sourceNumbers": [
+              10
+            ]
+          },
+          "note": {
+            "text": "在标准条件（因子 1）下，该方法最窄的 95% 置信区间为 ±2,8 h。使用校正因子、较长时间间隔或环境不稳定时，界限更宽：请阅读原始列线图中的界限。",
+            "locale": "zh",
+            "template": "documented-authored-a370366d08dc5429bf80"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "80 kg, ambiente 25 °C (equação acima de 23 °C), retal 34,72 °C: cerca de 6 h",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "所用方程",
+                "locale": "zh",
+                "template": "documented-authored-356dabff4ba500686a7f"
+              },
+              "value": {
+                "text": "环境温度高于23 °C（10/9 / 1/9）",
+                "locale": "zh",
+                "template": "documented-authored-b68ce1151def4c7d2da5"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "校正后体重（因子 × 体重）",
+                "locale": "zh",
+                "template": "documented-authored-d5042665df842ae2ca64"
+              },
+              "value": {
+                "text": "80.0 kg",
+                "locale": "zh",
+                "template": "documented-authored-d098cb4915945a199529",
+                "sourceNumbers": [
+                  80
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "冷却常数 B",
+                "locale": "zh",
+                "template": "documented-authored-5a94cb1a17d20de49387"
+              },
+              "value": {
+                "text": "-0.0544 h⁻¹",
+                "locale": "zh",
+                "template": "documented-authored-b6dce8c80b9267aa26da",
+                "sourceNumbers": [
+                  -0.0544
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "标准化温度 Q",
+                "locale": "zh",
+                "template": "documented-authored-0b07b85ef6c4c0b25db8"
+              },
+              "value": {
+                "text": "0.797",
+                "locale": "zh",
+                "template": "documented-authored-f234eb90d3f708feab32",
+                "sourceNumbers": [
+                  0.797
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "约于 6 h 1 min 前死亡（模型点估计）",
+            "locale": "zh",
+            "template": "documented-authored-3769b151347f886eeccd",
+            "sourceNumbers": [
+              6,
+              1
+            ]
+          },
+          "note": {
+            "text": "在标准条件（因子 1）下，该方法最窄的 95% 置信区间为 ±2,8 h。使用校正因子、较长时间间隔或环境不稳定时，界限更宽：请阅读原始列线图中的界限。",
+            "locale": "zh",
+            "template": "documented-authored-a370366d08dc5429bf80"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "70 kg, fator 1, ambiente 20 °C, retal 31,41 °C: cerca de 10 h (equação calculada à mão para t = 10 h dá 31,41 °C)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "使用した式",
+                "locale": "ja",
+                "template": "documented-authored-356dabff4ba500686a7f"
+              },
+              "value": {
+                "text": "23 °Cまでの環境 (1,25 / 0,25)",
+                "locale": "ja",
+                "template": "documented-authored-613d91951fecd0ee8c8a"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "補正体重（係数 × 体重）",
+                "locale": "ja",
+                "template": "documented-authored-d5042665df842ae2ca64"
+              },
+              "value": {
+                "text": "70.0 kg",
+                "locale": "ja",
+                "template": "documented-authored-d098cb4915945a199529",
+                "sourceNumbers": [
+                  70
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "冷却定数 B",
+                "locale": "ja",
+                "template": "documented-authored-5a94cb1a17d20de49387"
+              },
+              "value": {
+                "text": "-0.0617 h⁻¹",
+                "locale": "ja",
+                "template": "documented-authored-b6dce8c80b9267aa26da",
+                "sourceNumbers": [
+                  -0.0617
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "標準化温度 Q",
+                "locale": "ja",
+                "template": "documented-authored-0b07b85ef6c4c0b25db8"
+              },
+              "value": {
+                "text": "0.663",
+                "locale": "ja",
+                "template": "documented-authored-f234eb90d3f708feab32",
+                "sourceNumbers": [
+                  0.663
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "約10時間前の死亡（モデルの点推定）",
+            "locale": "ja",
+            "template": "documented-authored-c6ac7bd7bf9d8272aed5",
+            "sourceNumbers": [
+              10
+            ]
+          },
+          "note": {
+            "text": "標準条件（係数1）では、この方法の最も狭い95%信頼区間は±2,8 hです。補正係数がある場合、長い間隔の場合、または環境が不安定な場合は、限界はより広くなります。元のノモグラムで限界を確認してください。",
+            "locale": "ja",
+            "template": "documented-authored-a370366d08dc5429bf80"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "80 kg, ambiente 25 °C (equação acima de 23 °C), retal 34,72 °C: cerca de 6 h",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "使用した式",
+                "locale": "ja",
+                "template": "documented-authored-356dabff4ba500686a7f"
+              },
+              "value": {
+                "text": "周囲温度が23 °Cを超える（10/9 / 1/9）",
+                "locale": "ja",
+                "template": "documented-authored-b68ce1151def4c7d2da5"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "補正体重（係数 × 体重）",
+                "locale": "ja",
+                "template": "documented-authored-d5042665df842ae2ca64"
+              },
+              "value": {
+                "text": "80.0 kg",
+                "locale": "ja",
+                "template": "documented-authored-d098cb4915945a199529",
+                "sourceNumbers": [
+                  80
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "冷却定数 B",
+                "locale": "ja",
+                "template": "documented-authored-5a94cb1a17d20de49387"
+              },
+              "value": {
+                "text": "-0.0544 h⁻¹",
+                "locale": "ja",
+                "template": "documented-authored-b6dce8c80b9267aa26da",
+                "sourceNumbers": [
+                  -0.0544
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "標準化温度 Q",
+                "locale": "ja",
+                "template": "documented-authored-0b07b85ef6c4c0b25db8"
+              },
+              "value": {
+                "text": "0.797",
+                "locale": "ja",
+                "template": "documented-authored-f234eb90d3f708feab32",
+                "sourceNumbers": [
+                  0.797
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "死亡は約6 h 1 min前（モデルの点推定）",
+            "locale": "ja",
+            "template": "documented-authored-3769b151347f886eeccd",
+            "sourceNumbers": [
+              6,
+              1
+            ]
+          },
+          "note": {
+            "text": "標準条件（係数1）では、この方法の最も狭い95%信頼区間は±2,8 hです。補正係数がある場合、長い間隔の場合、または環境が不安定な場合は、限界はより広くなります。元のノモグラムで限界を確認してください。",
+            "locale": "ja",
+            "template": "documented-authored-a370366d08dc5429bf80"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "70 kg, fator 1, ambiente 20 °C, retal 31,41 °C: cerca de 10 h (equação calculada à mão para t = 10 h dá 31,41 °C)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्रयुक्त समीकरण",
+                "locale": "hi",
+                "template": "documented-authored-356dabff4ba500686a7f"
+              },
+              "value": {
+                "text": "23 °C तक का परिवेश (1,25 / 0,25)",
+                "locale": "hi",
+                "template": "documented-authored-613d91951fecd0ee8c8a"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "संशोधित वजन (कारक × वजन)",
+                "locale": "hi",
+                "template": "documented-authored-d5042665df842ae2ca64"
+              },
+              "value": {
+                "text": "70.0 kg",
+                "locale": "hi",
+                "template": "documented-authored-d098cb4915945a199529",
+                "sourceNumbers": [
+                  70
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "शीतलन स्थिरांक B",
+                "locale": "hi",
+                "template": "documented-authored-5a94cb1a17d20de49387"
+              },
+              "value": {
+                "text": "-0.0617 h⁻¹",
+                "locale": "hi",
+                "template": "documented-authored-b6dce8c80b9267aa26da",
+                "sourceNumbers": [
+                  -0.0617
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "मानकीकृत तापमान Q",
+                "locale": "hi",
+                "template": "documented-authored-0b07b85ef6c4c0b25db8"
+              },
+              "value": {
+                "text": "0.663",
+                "locale": "hi",
+                "template": "documented-authored-f234eb90d3f708feab32",
+                "sourceNumbers": [
+                  0.663
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "लगभग 10 h पहले मृत्यु हुई (मॉडल का बिंदु अनुमान)",
+            "locale": "hi",
+            "template": "documented-authored-c6ac7bd7bf9d8272aed5",
+            "sourceNumbers": [
+              10
+            ]
+          },
+          "note": {
+            "text": "मानक परिस्थितियों (factor 1) में विधि का सबसे संकीर्ण 95% विश्वास अंतराल ±2,8 h है। सुधार कारकों, लंबे अंतरालों या अस्थिर परिवेश में सीमाएँ अधिक व्यापक होती हैं: मूल नॉमोग्राम में सीमाएँ देखें।",
+            "locale": "hi",
+            "template": "documented-authored-a370366d08dc5429bf80"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "80 kg, ambiente 25 °C (equação acima de 23 °C), retal 34,72 °C: cerca de 6 h",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्रयुक्त समीकरण",
+                "locale": "hi",
+                "template": "documented-authored-356dabff4ba500686a7f"
+              },
+              "value": {
+                "text": "परिवेश तापमान 23 °C से अधिक (10/9 / 1/9)",
+                "locale": "hi",
+                "template": "documented-authored-b68ce1151def4c7d2da5"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "संशोधित वजन (कारक × वजन)",
+                "locale": "hi",
+                "template": "documented-authored-d5042665df842ae2ca64"
+              },
+              "value": {
+                "text": "80.0 kg",
+                "locale": "hi",
+                "template": "documented-authored-d098cb4915945a199529",
+                "sourceNumbers": [
+                  80
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "शीतलन स्थिरांक B",
+                "locale": "hi",
+                "template": "documented-authored-5a94cb1a17d20de49387"
+              },
+              "value": {
+                "text": "-0.0544 h⁻¹",
+                "locale": "hi",
+                "template": "documented-authored-b6dce8c80b9267aa26da",
+                "sourceNumbers": [
+                  -0.0544
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "मानकीकृत तापमान Q",
+                "locale": "hi",
+                "template": "documented-authored-0b07b85ef6c4c0b25db8"
+              },
+              "value": {
+                "text": "0.797",
+                "locale": "hi",
+                "template": "documented-authored-f234eb90d3f708feab32",
+                "sourceNumbers": [
+                  0.797
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "मृत्यु लगभग 6 h 1 min पहले (मॉडल का बिंदु अनुमान)",
+            "locale": "hi",
+            "template": "documented-authored-3769b151347f886eeccd",
+            "sourceNumbers": [
+              6,
+              1
+            ]
+          },
+          "note": {
+            "text": "मानक परिस्थितियों (factor 1) में विधि का सबसे संकीर्ण 95% विश्वास अंतराल ±2,8 h है। सुधार कारकों, लंबे अंतरालों या अस्थिर परिवेश में सीमाएँ अधिक व्यापक होती हैं: मूल नॉमोग्राम में सीमाएँ देखें।",
+            "locale": "hi",
+            "template": "documented-authored-a370366d08dc5429bf80"
+          },
+          "level": "info"
+        }
+      }
+    ]
+  }
+}

@@ -325,7 +325,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Henssge: equação técnica de Otatsume et al. 2024 (até 23 °C: 5/4 e 1/4; acima de 23 °C: 10/9 e 1/9); bisseção numérica; original de 1988 não lido integralmente",
-    "implementationVersion": "intervalo-post-mortem-henssge@native-2026-10-03+c88a7309c0b8",
+    "implementationVersion": "intervalo-post-mortem-henssge@native-2026-10-05+51aa703c8009",
     "currentMethodSource": "https://doi.org/10.1016/j.jflm.2023.102634",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -632,7 +632,7 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "c88a7309c0b8d150d1d95aac64cb853655e1dc5567269c3fdd21edc57484f4ba",
+      "implementationHash": "51aa703c800951e14b9822636144881aa69700d1200981f70c984564db932e9a",
       "source35Amendment": {
         "at": "2026-10-04T21:58:29.507Z",
         "scope": "Declared Otatsume2024 equation variant; only warm coefficient1.11/.11 replaced by10/9/1/9. B, corrected-mass placement, ambient cutoff23, schema and bisection unchanged.",
@@ -747,6 +747,34 @@
             }
           ]
         }
+      ],
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "intervalo-post-mortem-henssge@native-2026-10-03+c88a7309c0b8",
+          "previousImplementationHash": "c88a7309c0b8d150d1d95aac64cb853655e1dc5567269c3fdd21edc57484f4ba",
+          "implementationHash": "51aa703c800951e14b9822636144881aa69700d1200981f70c984564db932e9a",
+          "scientificBodySha256": "6247924eb23368abe1916f744496f0ca7e0c20533df13a281f8440546c6aaac0",
+          "metadataContractHash": "4d2a3dfbf75b4e6c6b313755fa2835a5f558ca1d45281ff39d50afe049748b00",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
       ]
     },
     "limits": "A estimativa de Henssge depende do modelo de resfriamento e de uma medida retal, com condições ambientais e fatores de correção definidos na versão. Não é hora de morte exata. A solução numérica e a incerteza precisam corresponder às condições do caso e à fonte; o resumo original não permite confirmar todos esses critérios. Esta variante declara a equação técnica de Otatsume e colaboradores, de 2024, cujas equações 1–4 foram lidas na página 2 do artigo: A = 5/4 para ambiente até 23 °C e A = 10/9 acima de 23 °C. O coeficiente 10/9 é usado como fração, sem substituí-lo por 1,11. O termo B, o fator aplicado ao peso, os limites de entrada e a solução numérica permanecem os mesmos desta interface. A publicação de 2019 imprime 1,11 e 0,11, uma fronteira ambiental diferente e uma colocação diferente do fator de correção; essa edição fica registrada como comparação, não como prova de equivalência integral. O original de 1988 não foi lido integralmente. A conferência não aprova a hora de morte individual, a escolha dos fatores de correção, a incerteza, o intervalo de confiança nem o uso pericial.",
@@ -859,20 +887,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/intervalo-post-mortem-henssge/calculator.js",
-    "bytes": 6052,
-    "sha256": "c88a7309c0b8d150d1d95aac64cb853655e1dc5567269c3fdd21edc57484f4ba"
+    "bytes": 6257,
+    "sha256": "51aa703c800951e14b9822636144881aa69700d1200981f70c984564db932e9a"
   },
-  "sourceToolSha256": "f82386e12b5aae8fa077d908e8ca2bb223145c279c24fe49ef3dab2b8826f0ad",
+  "sourceToolSha256": "19de1f0636185e59bccbc34124c06f833366336379929cf96e47875c318231f9",
   "omittedFullReferenceBanks": [
     {
       "rows": 8,
       "sha256": "c1cd08d07d1a77666381fb3780c44b564ff95f3d778814130092dd4add49186b",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 8,
       "sha256": "c1cd08d07d1a77666381fb3780c44b564ff95f3d778814130092dd4add49186b",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

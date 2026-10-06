@@ -85,3 +85,35 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Death about 10 h ago (point estimate of the model)
+
+| Result details | |
+| --- | --- |
+| Equation used | environment up to 23 °C (1,25 / 0,25) |
+| Corrected weight (factor × weight) | 70.0 kg |
+| Cooling constant B | -0.0617 h⁻¹ |
+| Standardized temperature Q | 0.663 |
+
+The narrowest 95% confidence interval of the method is ±2,8 h, under standard conditions (factor 1). With correction factors, long intervals, or unstable environment, the limits are wider: read the limits on the original nomogram.
+
+
+### 2
+
+Death about 6 h 1 min ago (model point estimate)
+
+| Result details | |
+| --- | --- |
+| Equation used | ambient temperature above 23 °C (10/9 / 1/9) |
+| Corrected weight (factor × weight) | 80.0 kg |
+| Cooling constant B | -0.0544 h⁻¹ |
+| Standardized temperature Q | 0.797 |
+
+The narrowest 95% confidence interval of the method is ±2,8 h, under standard conditions (factor 1). With correction factors, long intervals, or unstable environment, the limits are wider: read the limits on the original nomogram.
+

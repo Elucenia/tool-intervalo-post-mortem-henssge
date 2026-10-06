@@ -85,3 +85,35 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Morte circa 10 h fa (stima puntuale del modello)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Equazione utilizzata | ambiente fino a 23 °C (1,25 / 0,25) |
+| Peso corretto (fattore × peso) | 70,0 kg |
+| Costante di raffreddamento B | -0,0617 h⁻¹ |
+| Temperatura standardizzata Q | 0,663 |
+
+L’intervallo di confidenza del 95% più stretto del metodo è di ±2,8 h, in condizioni standard (fattore 1). Con fattori di correzione, intervalli lunghi o ambiente instabile, i limiti sono più ampi: leggere i limiti nel nomogramma originale.
+
+
+### 2
+
+Morte circa 6 h 1 min fa (stima puntuale del modello)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Equazione utilizzata | temperatura ambiente oltre 23 °C (10/9 / 1/9) |
+| Peso corretto (fattore × peso) | 80,0 kg |
+| Costante di raffreddamento B | -0,0544 h⁻¹ |
+| Temperatura standardizzata Q | 0,797 |
+
+L’intervallo di confidenza del 95% più stretto del metodo è di ±2,8 h, in condizioni standard (fattore 1). Con fattori di correzione, intervalli lunghi o ambiente instabile, i limiti sono più ampi: leggere i limiti nel nomogramma originale.
+

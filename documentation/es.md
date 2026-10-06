@@ -85,3 +85,35 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Muerte hace cerca de 10 h (estimación puntual del modelo)
+
+| Detalles del resultado | |
+| --- | --- |
+| Ecuación utilizada | ambiente hasta 23 °C (1,25 / 0,25) |
+| Peso corregido (factor × peso) | 70,0 kg |
+| Constante de enfriamiento B | -0,0617 h⁻¹ |
+| Temperatura estandarizada Q | 0,663 |
+
+El intervalo de confianza del 95% más estrecho del método es de ±2,8 h, en condiciones estándar (factor 1). Con factores de corrección, intervalos largos o ambiente inestable, los límites son más amplios: lea los límites en el nomograma original.
+
+
+### 2
+
+Muerte hace cerca de 6 h 1 min (estimación puntual del modelo)
+
+| Detalles del resultado | |
+| --- | --- |
+| Ecuación utilizada | ambiente por encima de 23 °C (10/9 / 1/9) |
+| Peso corregido (factor × peso) | 80,0 kg |
+| Constante de enfriamiento B | -0,0544 h⁻¹ |
+| Temperatura estandarizada Q | 0,797 |
+
+El intervalo de confianza del 95% más estrecho del método es de ±2,8 h, en condiciones estándar (factor 1). Con factores de corrección, intervalos largos o ambiente inestable, los límites son más amplios: lea los límites en el nomograma original.
+

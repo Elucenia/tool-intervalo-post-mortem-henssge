@@ -85,3 +85,35 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Tod vor etwa 10 h (Punktschätzung des Modells)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Verwendete Gleichung | Umgebung bis 23 °C (1,25 / 0,25) |
+| Korrigiertes Gewicht (Faktor × Gewicht) | 70,0 kg |
+| Abkühlkonstante B | -0,0617 h⁻¹ |
+| Standardisierte Temperatur Q | 0,663 |
+
+Das engste 95%-Konfidenzintervall der Methode beträgt unter Standardbedingungen (Faktor 1) ±2,8 h. Bei Korrekturfaktoren, langen Intervallen oder instabiler Umgebung sind die Grenzen weiter: Lesen Sie die Grenzen im ursprünglichen Nomogramm nach.
+
+
+### 2
+
+Tod vor etwa 6 h 1 min (Punktschätzung des Modells)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Verwendete Gleichung | Umgebungstemperatur über 23 °C (10/9 / 1/9) |
+| Korrigiertes Gewicht (Faktor × Gewicht) | 80,0 kg |
+| Abkühlkonstante B | -0,0544 h⁻¹ |
+| Standardisierte Temperatur Q | 0,797 |
+
+Das engste 95%-Konfidenzintervall der Methode beträgt unter Standardbedingungen (Faktor 1) ±2,8 h. Bei Korrekturfaktoren, langen Intervallen oder instabiler Umgebung sind die Grenzen weiter: Lesen Sie die Grenzen im ursprünglichen Nomogramm nach.
+

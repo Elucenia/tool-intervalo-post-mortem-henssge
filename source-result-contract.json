@@ -1,0 +1,208 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "intervalo-post-mortem-henssge",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "2efa9f4e1000ed82c04d6b42f3fa48b21c2f46ab",
+    "oldEngineSha256": "c88a7309c0b8d150d1d95aac64cb853655e1dc5567269c3fdd21edc57484f4ba",
+    "currentEngineSha256": "51aa703c800951e14b9822636144881aa69700d1200981f70c984564db932e9a"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "70 kg, fator 1, ambiente 20 °C, retal 31,41 °C: cerca de 10 h (equação calculada à mão para t = 10 h dá 31,41 °C)",
+      "input": {
+        "tr": 31.41,
+        "ta": 20,
+        "peso": 70,
+        "fc": 1
+      },
+      "publicOutput": {
+        "id": "intervalo-post-mortem-henssge",
+        "main": [
+          "10,0",
+          "horas"
+        ],
+        "label": "Intervalo post-mortem estimado (Henssge)",
+        "raw": {
+          "t": 9.99718202958405,
+          "B": -0.061660081472802435,
+          "q": 0.6633720930232557
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "t": 10,
+          "B": -0.06166
+        },
+        "level": "info",
+        "tol": 0.1
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "10,0",
+          "horas"
+        ],
+        "label": "Intervalo post-mortem estimado (Henssge)",
+        "level": "info",
+        "verdict": "Morte há cerca de 10 h (estimativa pontual do modelo)",
+        "rows": [
+          [
+            "Equação usada",
+            "ambiente até 23 °C (1,25 / 0,25)"
+          ],
+          [
+            "Peso corrigido (fator × peso)",
+            "70,0 kg"
+          ],
+          [
+            "Constante de resfriamento B",
+            "-0,0617 h⁻¹"
+          ],
+          [
+            "Temperatura padronizada Q",
+            "0,663"
+          ]
+        ],
+        "note": "O menor intervalo de confiança de 95% do método é de ±2,8 h, em condições padrão (fator 1). Com fatores de correção, intervalos longos ou ambiente instável, os limites são mais largos: leia os limites no nomograma original.",
+        "raw": {
+          "t": 9.99718202958405,
+          "B": -0.061660081472802435,
+          "q": 0.6633720930232557
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "80 kg, ambiente 25 °C (equação acima de 23 °C), retal 34,72 °C: cerca de 6 h",
+      "input": {
+        "tr": 34.72,
+        "ta": 25,
+        "peso": 80
+      },
+      "publicOutput": {
+        "id": "intervalo-post-mortem-henssge",
+        "main": [
+          "6,0",
+          "horas"
+        ],
+        "label": "Intervalo post-mortem estimado (Henssge)",
+        "raw": {
+          "t": 6.01190779100004,
+          "B": -0.05444901866913413,
+          "q": 0.7967213114754096
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "t": 6,
+          "B": -0.05445
+        },
+        "tol": 0.1
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "6,0",
+          "horas"
+        ],
+        "label": "Intervalo post-mortem estimado (Henssge)",
+        "level": "info",
+        "verdict": "Morte há cerca de 6 h 1 min (estimativa pontual do modelo)",
+        "rows": [
+          [
+            "Equação usada",
+            "ambiente acima de 23 °C (10/9 / 1/9)"
+          ],
+          [
+            "Peso corrigido (fator × peso)",
+            "80,0 kg"
+          ],
+          [
+            "Constante de resfriamento B",
+            "-0,0544 h⁻¹"
+          ],
+          [
+            "Temperatura padronizada Q",
+            "0,797"
+          ]
+        ],
+        "note": "O menor intervalo de confiança de 95% do método é de ±2,8 h, em condições padrão (fator 1). Com fatores de correção, intervalos longos ou ambiente instável, os limites são mais largos: leia os limites no nomograma original.",
+        "raw": {
+          "t": 6.01190779100004,
+          "B": -0.05444901866913413,
+          "q": 0.7967213114754096
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Retal acima de 37,2 °C: erro",
+      "input": {
+        "tr": 38,
+        "ta": 20,
+        "peso": 70
+      },
+      "publicOutput": {
+        "error": "A temperatura retal deve ser menor que 37,2 °C (temperatura de referência na hora da morte).",
+        "code": "FORMULA_DOMAIN"
+      },
+      "sourceExpected": {
+        "error": true
+      },
+      "state": "existing-rejection"
+    },
+    {
+      "caseIndex": 3,
+      "name": "Retal igual à ambiente: erro",
+      "input": {
+        "tr": 20,
+        "ta": 20,
+        "peso": 70
+      },
+      "publicOutput": {
+        "error": "A temperatura retal precisa ser maior que a ambiente para o método de resfriamento.",
+        "code": "FORMULA_DOMAIN"
+      },
+      "sourceExpected": {
+        "error": true
+      },
+      "state": "existing-rejection"
+    }
+  ]
+}

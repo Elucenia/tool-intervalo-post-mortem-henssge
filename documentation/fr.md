@@ -85,3 +85,35 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Décès il y a environ 10 h (estimation ponctuelle du modèle)
+
+| Détails du résultat | |
+| --- | --- |
+| Équation utilisée | environnement jusqu’à 23 °C (1,25 / 0,25) |
+| Poids corrigé (facteur × poids) | 70,0 kg |
+| Constante de refroidissement B | -0,0617 h⁻¹ |
+| Température standardisée Q | 0,663 |
+
+L’intervalle de confiance à 95 % le plus étroit de la méthode est de ±2,8 h, dans des conditions standard (facteur 1). Avec des facteurs de correction, des intervalles longs ou un environnement instable, les limites sont plus larges : lisez les limites sur le nomogramme original.
+
+
+### 2
+
+Décès il y a environ 6 h 1 min (estimation ponctuelle du modèle)
+
+| Détails du résultat | |
+| --- | --- |
+| Équation utilisée | température ambiante au-dessus de 23 °C (10/9 / 1/9) |
+| Poids corrigé (facteur × poids) | 80,0 kg |
+| Constante de refroidissement B | -0,0544 h⁻¹ |
+| Température standardisée Q | 0,797 |
+
+L’intervalle de confiance à 95 % le plus étroit de la méthode est de ±2,8 h, dans des conditions standard (facteur 1). Avec des facteurs de correction, des intervalles longs ou un environnement instable, les limites sont plus larges : lisez les limites sur le nomogramme original.
+
